@@ -4,7 +4,7 @@ function initMap() {
     const leedsuni = { lat: 53.806814545321885, lng: -1.5549791557661776 };
     // The map, centered at Leeds uni
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 16,
+      zoom: 17,
       center: leedsuni,
       mapId: 'f6a7c0d51f114e7e',
     });
