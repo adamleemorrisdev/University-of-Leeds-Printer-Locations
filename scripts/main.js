@@ -9,9 +9,13 @@ function initMap() {
       mapId: 'f6a7c0d51f114e7e',
     });
     // The marker, positioned at Leeds uni
-    const marker = new google.maps.Marker({
+    new google.maps.Marker({
       position: leedsuni,
       map: map,
+      icon: {
+        url: "/images/marker.png",
+        scaledSize: new google.maps.Size(35, 35)
+      }
     });
   }
 
