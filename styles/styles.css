@@ -56,6 +56,8 @@ img[src="../images/search.svg"] {
   background-image: url(../images/bg-3.png);
   background-color:rgb(255, 252, 245);
   background-repeat: no-repeat;
+  /* Having trouble trying to size this accurately so that it looks the same as the find a room website, not sure why.
+  Think it's something to do with the sizing or position - TO COMPLETE */
 }
 
 .container {
