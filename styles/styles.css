@@ -1,20 +1,89 @@
+@font-face {
+  font-family: "Open-Sans";
+  src: url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+}
+
 /* Set the size of the div element that contains the map */
 #map {
     height: 400px;
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
+    border:  1px solid lightgray;
   }
 
-  .main-header {
-    font-family: monospace, Verdana, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    color: green;
-    border: 2px solid black;
-    padding: 10px;
-    margin-left: 150px;
-    margin-right: 150px;
-    box-shadow:  6px 10px 10px 0px #94D279; /** check the parameters for this later 
-    on W3Schools **/ 
-  }
+body {
+  margin: auto;
+}
+
+.header-image {
+  background-color: rgb(33, 33, 33);
+  width: auto;
+  height: auto;
+  text-align: right;
+  padding: 10px;
+  margin: auto;
+}
+
+.main-header-container {
+  text-align: center;
+  font-size: 14px;
+}
+
+.local-header-title {
+  background-color: rgb(0, 104, 0);
+  color:white;
+  font-size: 8px;
+  font-family: "Open-sans";
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+  width: auto;
+}
+
+img[src="../images/search.svg"] {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 15px;
+  margin-top: -7px;
+}
+
+
+.background-image {
+  background-color: red;
+  background-image: url(../images/bg-3.png);
+  background-color:rgb(255, 252, 245);
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: relative;
+}
+
+a {
+text-decoration: none;
+}
+
+a:link {
+  color: white;
+  font-size: 16px;
+}
+
+a:visited {
+  color: white;
+}
+
+/* a:focus {
+
+} */
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* a:active {
+
+} */
+
