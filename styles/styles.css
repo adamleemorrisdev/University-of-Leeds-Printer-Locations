@@ -1,19 +1,20 @@
 @font-face {
-  font-family: "Open-Sans";
-  src: url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+  font-family: 'Roboto', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
 
 /* Set the size of the div element that contains the map */
 #map {
     height: 400px;
     /* The height is 400 pixels */
-    width: 100%;
+    width: auto;
     /* The width is the width of the web page */
     border:  1px solid lightgray;
   }
 
 body {
   margin: auto;
+  font-family: 'Roboto';
 }
 
 .header-image {
@@ -34,12 +35,13 @@ body {
   background-color: rgb(0, 104, 0);
   color:white;
   font-size: 8px;
-  font-family: "Open-sans";
+  font-family: 'Roboto';
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 20px;
   position: relative;
   width: auto;
+  letter-spacing: 0.8pt;
 }
 
 img[src="../images/search.svg"] {
@@ -51,15 +53,37 @@ img[src="../images/search.svg"] {
 }
 
 
-.background-image {
-  background-color: red;
-  background-image: url(../images/bg-3.png);
-  background-color:rgb(255, 252, 245);
-  background-repeat: no-repeat;
+.main-text {
+  /* background-color: red; */
+  height: 300px;
+  width:auto;
+  /* margin-right: 20px; */
+  background-image: url(../images/bg-3.png), url(../images/bg-1.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: local;
+  font-size: 22px;
+  font-family: 'Roboto';
+  margin-top: -20px;
+  padding-top: 200px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+  
   /* Having trouble trying to size this accurately so that it looks the same as the find a room website, not sure why.
-  Think it's something to do with the sizing or position - TO COMPLETE */
+  Think it's something to do with the sizing or position - TO COMPLETE 
+  
+  SORTED IT! After a day - it was the background attachment and background position elements that allowed me to place it correctly.
+  I learned that in order to use 2 background images I have to separate the 2 urls with a comma. */ 
+
+.site-contact {
+  background-color: rgb(53, 53, 53);
 }
 
+.contact-icon {
+  height: 20px;
+}
 .container {
   position: relative;
 }
